@@ -16,11 +16,14 @@ AddEventHandler('db:updateUser', function(new)
 end)
 
 RegisterServerEvent('db:updateUserName')
-AddEventHandler('db:updateUserName', function(name,data)
+AddEventHandler('db:updateUserName', function(name,firstname,lastname,data)
 	identifier = GetPlayerIdentifier(source, 0)
 	local player = {}
 	player.playerName 	= name
+	player.firstname = firstname
+	player.lastname = lastname
 	player.dateofbirth 	= data
+
 	db.updateUser(identifier, player)
 end)
 

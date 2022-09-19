@@ -162,7 +162,11 @@ end)
 RegisterNUICallback('register', function(data)
 	local player = {}
 	player.playerName 	= data.name ..'_'.. data.family
+	player.firstname = data.name
+	player.lastname = data.family
 	player.dateofbirth 	= data.dateofbirth
+
+
 	ESX.TriggerServerCallback('nameAvalibity' , function(avalible)
 	if data.name:find(" ") or data.family:find(" ") then
 			SendNUIMessage({
@@ -171,8 +175,10 @@ RegisterNUICallback('register', function(data)
 			})
     else
 		if avalible then
-			TriggerServerEvent('db:updateUserName', player.playerName , player.dateofbirth)
+			TriggerServerEvent('db:updateUserName',player.playerName, player.firstname,player.lastname,player.dateofbirth)
 			TriggerServerEvent('es:newName', player.playerName)
+			TriggerServerEvent('es:newName', player.firstname)
+			TriggerServerEvent('es:newName', player.lastname)
 			EnableGui(false)
 			Wait (500)
 			loadToGround()
