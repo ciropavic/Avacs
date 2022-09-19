@@ -374,21 +374,36 @@ Config.AuthorizedVehicles = {
 	},
 
 	po1 = {
-	
+		{ model = 'police', label = 'Police makan', price = 1000 },
+		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
+		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }
 	},
 
 	po2 = {
-
+		{ model = 'police', label = 'Police makan', price = 1000 },
+		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
+		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }
 	},
 
 	po3 = {
+		{ model = 'police', label = 'Police makan', price = 1000 },
+		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
+		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }
 	},
 
 	slo = {
-		
+		{ model = 'police', label = 'Police makan', price = 1000 },
+		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
+		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }
 	},
 
 	sergeant = {
+		{ model = 'police', label = 'Police makan', price = 1000 },
+		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
+		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }
+	},
+
+	captain = {
 		{ model = 'police', label = 'Police makan', price = 1000 },
 		{ model = 'police4', label = 'Unmarked Cruiser', price = 1000 },
 		{ model = '2018charger', label = 'Police Charger', livery = 0, extras = {1, 2, 3, 4, 8}, nonextras = {5, 6, 7} }

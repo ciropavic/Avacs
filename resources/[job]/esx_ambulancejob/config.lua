@@ -139,6 +139,11 @@ Config.AuthorizedVehicles = {
 		{ model = 'ambulance', label = 'Ambulance Van', price = 35000},
 		{ model = 'dodgeems', label = 'Dodge EMS', price = 50000}
 	},
+	
+	commander = {
+		{ model = 'ambulance', label = 'Ambulance Van', price = 35000},
+		{ model = 'dodgeems', label = 'Dodge EMS', price = 50000}
+	},
 
 	paramedics = {
 		{ model = 'ambulance', label = 'Ambulance Van', price = 35000},

@@ -561,6 +561,8 @@ end, false)
 		  end
   
 		  local authorizedVehicles = Config.AuthorizedVehicles[PlayerData.job.grade_name]
+		  print(PlayerData.job.grade_name)
+		  
 		  for i=1, #authorizedVehicles, 1 do
 			  table.insert(elements, { label = authorizedVehicles[i].label, model = authorizedVehicles[i].model, livery = authorizedVehicles[i].livery, extras = authorizedVehicles[i].extras, nonextras = authorizedVehicles[i].nonextras})
 		  end

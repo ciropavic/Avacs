@@ -805,7 +805,7 @@ function OpenVehicleSpawnerMenu(hospital, partNum)
 
 
 			local authorizedVehicles = Config.AuthorizedVehicles[ESX.PlayerData.job.grade_name]
-
+			print(ESX.PlayerData.job.grade_name)
 			for i=1, #authorizedVehicles, 1 do
 
 				table.insert(elements, { label = authorizedVehicles[i].label, model = authorizedVehicles[i].model, extras = authorizedVehicles[i].extras })
